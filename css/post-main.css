@@ -1,0 +1,96 @@
+/*Main*/
+.post-main-img {
+  height: auto;
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
+
+.post-figure figcaption {
+margin-bottom: 2rem;
+}
+
+.post-date-author {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.post-main {
+  display: grid;
+  padding: 3rem;
+  background-color: #ff00;
+}
+
+.post-header h1 {
+  font: 700 2.5rem/3rem "Wix Madefor Display", sans-serif;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.post-main h2 {
+  background-color: #568e91b7;
+  padding: 0.5rem;
+}
+
+.post-main h2,
+.post-main h3 {
+  font-family: Quicksand, sans-serif;
+}
+
+.post-main h3 {
+  background-color: #EFEFEF;
+  padding: 0.5rem;
+}
+
+button {
+  font-size: 1rem;
+}
+
+article p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.post-article-socials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.post-article-socials .fa {
+  color: #41bec5;
+}
+
+.post-article-socials .fa-print {
+  color: #013436;
+}
+
+.post-main .fa-arrow-circle-left,
+.post-main .fa-arrow-circle-right {
+  color: #cf7b1e;
+}
+
+.post-main q {
+  font: italic 2rem/2.8rem;
+  color: #9b570c;
+}
+
+.post-main u {
+  text-decoration: underline;
+}
+
+.post-main a {
+  color: #995b16;
+  text-decoration: underline #568e91;
+}
+
+.post-main strong {
+  font-weight: bold;
+}
+
+.post-main em {
+  font-style: italic;
+}

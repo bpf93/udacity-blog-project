@@ -1,0 +1,137 @@
+/* Home Responsive Styling */
+/*Small Screens*/
+
+.home-layout {
+  display: grid;
+  grid-template-rows: 5rem auto 5rem;
+  grid-template-areas:
+    "nav"
+    "hm"
+    "hft";
+}
+
+.home-main {
+  grid-area: hm;
+  padding: 0 7rem;
+}
+
+.blog-card {
+  padding: 5rem 0;
+}
+
+.blog-card p {
+  line-height: 1.9rem;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 1rem 0 3rem;
+  text-align: justify;
+}
+
+.home-footer {
+  grid-area: hft;
+}
+
+/*Medium Screens*/
+
+@media (min-width:600px) and (max-width:1100px) {
+  .home-layout {
+    display: grid;
+    grid-template-rows: 5rem auto 5rem;
+    grid-template-areas:
+      "nav"
+      "hm"
+      "hft";
+  }
+
+  .home-main {
+    display: flex;
+    justify-content: center;
+    row-gap: 6rem;
+    background-color: #8f7960;
+    padding: 0;
+  }
+
+  .home-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5rem;
+    width: 31.25rem;
+    background-color: #ffffffc7;
+    padding: 5rem 7rem;
+  } 
+
+  .blog-card {
+    background-color: #fff;
+    border-radius: 15px 50px;
+    padding: 2rem 1.5rem 0;
+    box-shadow: 0 0 8px 5px #d3d3d3;
+    width: 26.25rem;
+  }
+
+  .blog-card p {
+    font-size: 1.1rem;
+  }
+
+  .card-img img {
+    height: auto;
+  }
+
+  .read-more-btn {
+    font-size: 1.1rem;
+  }
+}
+
+/*Large Screens*/
+@media (min-width:1101px) {
+  .home-layout {
+    display: grid;
+    grid-template-rows: 5rem auto 5rem;
+    grid-template-areas:
+      "nav"
+      "hm"
+      "hft";
+  }
+
+  .home-main {
+    display: flex;
+    justify-content: center;
+    row-gap: 6rem;
+    padding: 0;
+    background-color: #8f7960;
+  }
+
+  .home-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5rem;
+    width: 59.375rem;
+    background-color: #fff;
+    padding: 5rem 0;
+  } 
+
+  .blog-card {
+    border-bottom: 0.0625rem solid #3f3e3e;
+  }
+
+  .blog-card p {
+    font-size: 1.1rem;
+  }
+
+  .read-more-btn {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,22 @@
+/*Footer*/
+.home-footer {
+  background-color: #EFEFEF;
+  color: #fff;
+  padding: 0.625rem;
+}
+
+.home-footer i {
+  color: #317578;
+}
+
+.home-footer-socials {
+  display: flex;
+  list-style: none;
+  gap: 1.25rem;
+  justify-content: flex-end;
+  margin-right: 3.125rem;
+}
+
+.post-footer p {
+  text-align: center;
+}
