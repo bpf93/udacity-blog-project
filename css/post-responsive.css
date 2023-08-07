@@ -35,7 +35,7 @@ article {
 
 /*Medium Screens*/
 
-@media (min-width:600px) and (max-width:1100px) {
+@media (min-width:481px) and (max-width:1024px) {
  
   .post-layout {
     display: grid;
@@ -80,8 +80,9 @@ article {
   }
 }
 
+
 /*Large Screens*/
-@media (min-width:1101px) {
+@media (min-width:1025px) {
   .post-layout {
     display: grid;
     grid-template-rows: 5rem auto 5rem;
