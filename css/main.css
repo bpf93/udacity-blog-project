@@ -3,10 +3,7 @@
 @import "home-main.css";
 @import "home-footer.css";
 @import "home-responsive.css";
-@import "post-main.css";
-@import "post-aside.css";
-@import "post-footer.css";
-@import "post-responsive.css";
+@import "post.css";
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css2?family=Noto+Sans&family=Work+Sans&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap);

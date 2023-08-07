@@ -1,0 +1,314 @@
+/*Main*/
+.post-main-img {
+  height: auto;
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
+
+.post-figure figcaption {
+margin-bottom: 2rem;
+}
+
+.post-date-author {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.post-main {
+  display: grid;
+  padding: 3rem;
+  background-color: #ff00;
+}
+
+.post-header h1 {
+  font: 700 2.5rem/3rem "Wix Madefor Display", sans-serif;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.post-main h2 {
+  background-color: #568e91b7;
+  padding: 0.5rem;
+}
+
+.post-main h2,
+.post-main h3 {
+  font-family: Quicksand, sans-serif;
+}
+
+.post-main h3 {
+  background-color: #EFEFEF;
+  padding: 0.5rem;
+}
+
+button {
+  font-size: 1rem;
+}
+
+article p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.post-article-socials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.post-article-socials .fa {
+  color: #41bec5;
+}
+
+.post-article-socials .fa-print {
+  color: #013436;
+}
+
+.post-main .fa-arrow-circle-left,
+.post-main .fa-arrow-circle-right {
+  color: #cf7b1e;
+}
+
+.post-main q {
+  font: italic 2rem/2.8rem;
+  color: #9b570c;
+}
+
+.post-main u {
+  text-decoration: underline;
+}
+
+.post-main a {
+  color: #995b16;
+  text-decoration: underline #568e91;
+}
+
+.post-main strong {
+  font-weight: bold;
+}
+
+.post-main em {
+  font-style: italic;
+}
+
+/*Aside*/
+.post-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cbc8c1;
+}
+
+
+.post-about {
+  padding: 2rem;
+  margin: 7rem 3rem;
+  background-color:#ffffff54;
+  text-align: center;
+  width: 60%;
+}
+
+.separator {
+  margin: 2rem 0;
+  height: 1px;
+  width: 100px;
+  background-color: #000;
+}
+
+.post-about-img {
+  display: block;
+  margin: 1rem auto;
+  width: 8.125rem;
+  border-radius: 50%;
+}
+
+.post-archives {
+  margin: 7rem;
+  padding: 2rem;
+  background-color: #ffffff54;
+}
+
+.post-archives a {
+  color: #000;
+}
+
+.post-archives h2,
+.post-about h2 {
+  font: 2rem "Dancing Script", cursive;
+  text-align: center;
+}
+
+.post-date-author {
+  margin-bottom: 1rem;
+}
+
+/*Footer*/
+.post-footer {
+  background-color: #EFEFEF;
+  padding: 1rem 0;
+}
+
+.post-footer-socials {
+  background-color: #EFEFEF;
+  min-height: auto;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 0 0 2rem 0;
+}
+
+.post-footer-socials li {
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 1rem;
+  line-height: 1rem;
+}
+
+.post-footer i {
+color: #41bec5;
+}
+
+/* Media Queries */
+/*Small Screens*/
+
+.post-layout {
+  display: grid;
+  grid-template-rows: 5rem auto auto 5rem;
+  grid-template-areas:
+    "nav"
+    "pm"
+    "pa"
+    "pft";
+}
+
+.post-nav {
+  grid-area: nav;
+}
+
+.post-main {
+  grid-area: pm;
+  background-color: #ffffff00;
+  justify-content: center;
+}
+
+.post-aside {
+  grid-area: pa;
+}
+
+.post-archives {
+  text-align: center;
+  width: 60%;
+}
+
+.post-archives ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.post-footer {
+  grid-area: pft;
+}
+
+article {
+  max-width: 37.5rem;
+}
+
+
+/*Medium Screens*/
+
+@media (min-width:481px) and (max-width:1024px) {
+ 
+  .post-layout {
+    display: grid;
+    grid-template-rows: 5rem auto 5rem;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "nav nav"
+      "pm pa"
+      "pft pft";
+  }
+
+  .post-main {
+    justify-content: center;
+  }
+
+  .post-aside {
+    margin: 0;
+    padding: 5rem 3rem;
+    min-width: 10rem;
+    background-color: #cbc8c1;
+  }
+
+  .post-about {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: #ffffff54;
+  }
+
+  .post-archives {
+    background-color: #ffffff54;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .separator {
+    margin: 5rem;
+  }
+
+  article {
+    max-width: 37.5rem;
+  }
+}
+
+
+/*Large Screens*/
+@media (min-width:1025px) {
+  .post-layout {
+    display: grid;
+    grid-template-rows: 5rem auto 5rem;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "nav nav"
+      "pm pa"
+      "pft pft";
+  }
+
+  .post-main {
+    justify-content: center;
+  }
+
+  .post-aside {
+    margin: 0;
+    padding: 5rem 3rem;
+    background-color: #cbc8c1;
+  }
+
+  .post-about {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: #ffffff54;
+  }
+
+  .post-archives {
+    background-color: #ffffff54;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .separator {
+    margin: 5rem;
+  }
+
+  article {
+    max-width: 37.5rem;
+  }
+
+}
