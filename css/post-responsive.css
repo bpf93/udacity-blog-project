@@ -24,6 +24,16 @@
   grid-area: pa;
 }
 
+.post-archives {
+  text-align: center;
+  width: 60%;
+}
+
+.post-archives ul {
+  display: inline-block;
+  text-align: left;
+}
+
 .post-footer {
   grid-area: pft;
 }
