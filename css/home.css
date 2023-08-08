@@ -1,96 +1,4 @@
 /* Home Main */
-.fa-read-more-icon {
-  color: #fff;
-}
-
-.home-main .fa {
-  color: #57B5F4;
-}
-
-.home-main {
-  padding: 5rem 0;
-}
-
-.blog-card {
-  width: 37.5rem;
-  border-bottom: 0.0625rem solid #d3d3d3;
-}
-
-.blog-card p {
-  font-size: 1.3rem;
-}
-
-.blog-card:last-child {
-  border: none;
-}
-
-header h1 {
-  font: bold 2rem/2.5rem "Wix Madefor Display", sans-serif;
-  text-align: left;
-  margin: 1rem 0 0 0;
-}
-
-.home-date {
-  display: block;
-  margin-bottom: 2rem;
-  text-align: left;
-  line-height: 2.5rem;
-}
-
-.card-img {
-  width: 100%;
-  height: auto;
-}
-
-.card-img img {
-  width: 100%;
-  height: 100%;
-}
-
-.card-text {
-  padding: 1rem;
-}
-
-.read-more {
-  margin: 1rem 0 4rem 0;
-  text-align: center;
-}
-
-.read-more-btn {
-  background-color: #122440;
-  color: #fff;
-  padding: 1rem;
-  text-decoration: none;
-  border-radius: 0.5rem;
-  font-size: 1.3rem;
-}
-
-/* Home Footer*/
-.home-footer {
-  background-color: #EFEFEF;
-  color: #fff;
-  padding: 0.625rem;
-}
-
-.home-footer i {
-  color: #317578;
-}
-
-.home-footer-socials {
-  display: flex;
-  list-style: none;
-  gap: 1.25rem;
-  justify-content: flex-end;
-  margin-right: 3.125rem;
-}
-
-.post-footer p {
-  text-align: center;
-}
-
-/* Home Responsive Styling */
-/*Small Screens*/
-
 .home-layout {
   display: grid;
   grid-template-rows: 5rem auto 5rem;
@@ -102,126 +10,87 @@ header h1 {
 
 .home-main {
   grid-area: hm;
-  padding: 0 7rem;
+  padding: 5rem 7rem;
 }
 
-.blog-card {
+/* Post Card Container */
+/* Post Cards */
+.post-card {
   padding: 5rem 0;
+  width: 37.5rem;
+  border-bottom: 0.0625rem solid #d3d3d3;
 }
 
-.blog-card p {
+.post-card__text {
   line-height: 1.9rem;
+  padding: 1rem 0 3rem;
+  font-size: 1.3rem;
+  text-align: justify;
 }
 
-figure {
+.post-card:last-child {
+  border: none;
+}
+
+.post-read-more {
+  margin: 1rem 0 4rem 0;
+  text-align: center;
+}
+
+.post-read-more__btn {
+  background-color: #122440;
+  color: #fff;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+}
+
+/* Header */
+.post-card-header__h1 {
+  font: bold 2rem/2.5rem "Wix Madefor Display", sans-serif;
+  text-align: left;
+  margin: 1rem 0 0 0;
+}
+
+.post-card-header__date {
+  display: block;
+  margin-bottom: 2rem;
+  text-align: left;
+  line-height: 2.5rem;
+}
+
+/* Post Figure */
+.post-card-header__figure {
   padding: 0;
   margin: 0;
 }
 
-figure img {
+.post-card-header__figure-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.card-text {
-  padding: 1rem 0 3rem;
-  text-align: justify;
-}
-
+/* Home Footer*/
 .home-footer {
   grid-area: hft;
+  background-color: #EFEFEF;
+  color: #fff;
+  padding: 0.625rem;
 }
 
-/*Medium Screens*/
-
-@media (min-width:600px) and (max-width:1100px) {
-  .home-layout {
-    display: grid;
-    grid-template-rows: 5rem auto 5rem;
-    grid-template-areas:
-      "nav"
-      "hm"
-      "hft";
-  }
-
-  .home-main {
-    display: flex;
-    justify-content: center;
-    row-gap: 6rem;
-    background-color: #8f7960;
-    padding: 0;
-  }
-
-  .home-card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 5rem;
-    width: 31.25rem;
-    background-color: #ffffffc7;
-    padding: 5rem 7rem;
-  } 
-
-  .blog-card {
-    background-color: #fff;
-    border-radius: 15px 50px;
-    padding: 2rem 1.5rem 0;
-    box-shadow: 0 0 8px 5px #d3d3d3;
-    width: 26.25rem;
-  }
-
-  .blog-card p {
-    font-size: 1.1rem;
-  }
-
-  .card-img img {
-    height: auto;
-  }
-
-  .read-more-btn {
-    font-size: 1.1rem;
-  }
+.home-footer-socials {
+  display: flex;
+  list-style: none;
+  gap: 1.25rem;
+  justify-content: flex-end;
+  margin-right: 3.125rem;
 }
 
-/*Large Screens*/
-@media (min-width:1101px) {
-  .home-layout {
-    display: grid;
-    grid-template-rows: 5rem auto 5rem;
-    grid-template-areas:
-      "nav"
-      "hm"
-      "hft";
-  }
-
-  .home-main {
-    display: flex;
-    justify-content: center;
-    row-gap: 6rem;
-    padding: 0;
-    background-color: #8f7960;
-  }
-
-  .home-card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 5rem;
-    width: 59.375rem;
-    background-color: #fff;
-    padding: 5rem 0;
-  } 
-
-  .blog-card {
-    border-bottom: 0.0625rem solid #3f3e3e;
-  }
-
-  .blog-card p {
-    font-size: 1.1rem;
-  }
-
-  .read-more-btn {
-    font-size: 1.1rem;
-  }
+.home-footer-socials i {
+  color: #317578;
 }
+
+
+
