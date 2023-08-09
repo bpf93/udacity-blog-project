@@ -1,13 +1,12 @@
 /* Home Main */
 .home-layout {
   display: grid;
-  grid-template-rows: 5rem 40vh auto 5rem;
+  grid-template-rows: 5rem 60vh auto 5rem;
   grid-template-areas:
     "nav"
     "hero"
     "hm"
     "hft";
-    background: rgb(204, 200, 200);
 }
 
 .home-main {
@@ -18,17 +17,28 @@
 .hero {
   grid-area: hero;
   width: 100%;
+  background: #979F51;
+}
+
+.hero__text,
+.hero__h1 {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 3rem;
+  white-space: nowrap;
+  color: white;
 }
 
 .hero__text {
-  text-align: center;
-  position: absolute;
+  font-family: "Dancing Script";
+}
+
+.hero__h1 {
   top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background: #ffffff66;
-  padding: 1rem 3rem;
-  white-space: nowrap;
 }
 
 
@@ -40,6 +50,7 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
 /* Post Cards */
 .post-card {
   width: 100%;
@@ -122,6 +133,3 @@
 .home-footer-socials i {
   color: #317578;
 }
-
-
-
