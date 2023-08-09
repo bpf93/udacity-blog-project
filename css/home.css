@@ -1,31 +1,58 @@
 /* Home Main */
 .home-layout {
   display: grid;
-  grid-template-rows: 5rem auto 5rem;
+  grid-template-rows: 5rem 40vh auto 5rem;
   grid-template-areas:
     "nav"
+    "hero"
     "hm"
     "hft";
+    background: rgb(204, 200, 200);
 }
 
 .home-main {
   grid-area: hm;
-  padding: 5rem 7rem;
 }
 
+/* Hero */
+.hero {
+  grid-area: hero;
+  width: 100%;
+}
+
+.hero__text {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff66;
+  padding: 1rem 3rem;
+  white-space: nowrap;
+}
+
+
 /* Post Card Container */
+.post-card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 /* Post Cards */
 .post-card {
-  padding: 5rem 0;
-  width: 37.5rem;
-  border-bottom: 0.0625rem solid #d3d3d3;
+  width: 100%;
+  background: white;
+  padding: 2rem 2rem 0;
+  margin: 0 1.5rem 2rem;
 }
 
 .post-card__text {
-  line-height: 1.9rem;
+  line-height: 1.6rem;
   padding: 1rem 0 3rem;
-  font-size: 1.3rem;
-  text-align: justify;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .post-card:last-child {
@@ -70,6 +97,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.post-card-header__figure-caption {
+  font-size: 1rem;
 }
 
 /* Home Footer*/
