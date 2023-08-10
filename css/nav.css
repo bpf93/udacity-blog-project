@@ -1,12 +1,14 @@
 /*Navigation*/
-nav {
+.container {
+  display: flex;
+  justify-content: flex-end;
   padding: 0.5rem;
   grid-area: nav;
   box-shadow: 0 0 5px 5px #b3b2b2;
   background: #979F51;
 }
 
-.nav-links {
+.nav__menu {
   display: flex;
   list-style: none;
   font-size: 1.25rem;
@@ -15,15 +17,87 @@ nav {
   padding-right: 1rem;
 }
 
-nav a {
+.nav__menu-link {
   color: #EFEFEF;
   text-decoration: none;
 }
 
-nav a:hover {
+.nav__menu-link:hover {
   background-color: #fff;
   opacity: 0.5;
   color: #000;
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  /* Hamburger Menu */
+  .hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.bar,
+.hamburger:after,
+.hamburger:before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.hamburger.active:before {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hamburger.active:after {
+  transform: rotate(45deg) translate(-9px, -6px);
+}
+
+.hamburger.active .bar {
+  opacity: 0;
+}
+
+/* Side Menu */
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 98;
+  top: 0;
+  right: 100%;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  background: #ffffffcf;
+  transition: 0.8s;
+}
+
+.mobile-nav.active {
+  right: 0;
+}
+
+.mobile-nav__link {
+  text-decoration: none;
+  color: black;
+  background: #fafad2;
+  padding: 1rem;
+  width: 180px;
+  text-align: center;
+}
+}
+

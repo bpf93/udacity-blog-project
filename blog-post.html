@@ -14,15 +14,20 @@
 
   <div class="post-layout">
 
-    <nav class="post-nav">
-
-      <ul class="nav-links">
-
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog-post.html">Blog</a></li>
-
-      </ul>
-
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__menu-li"><a class="nav__menu-link" href="index.html">Home</a></li>
+          <li class="nav__menu-li"><a class="nav__menu-link" href="blog-post.html">Blog</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+    </div>
+    <nav class="mobile-nav">
+      <a class="mobile-nav__link" href="index.html">Home</a>
+      <a class="mobile-nav__link" href="blog-post.html">Blog</a>
     </nav>
 
     <main class="post-main">
@@ -47,26 +52,32 @@
 
         <h2 class="post__h2">Setting Health Goals</h2>
 
-        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum debitis necessitatibus veritatis omnis
+        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum debitis necessitatibus
+          veritatis omnis
           eaque mollitia quaerat, inventore vero quam, velit nobis aliquam iste officia sit incidunt ea! Doloribus,
           dolore.</p>
 
         <h3 class="post__h3">Diet</h3>
 
-        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur corrupti sapiente, velit voluptatum
+        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur corrupti sapiente,
+          velit voluptatum
           debitis
-          repudiandae <u class="post__text--underline">earum vel quidem fugiat maxime praesentium</u> placeat totam odio magni
+          repudiandae <u class="post__text--underline">earum vel quidem fugiat maxime praesentium</u> placeat totam odio
+          magni
           architecto omnis ex nostrum ea
-          facilis? Id distinctio necessitatibus <strong class="post__text--bold">hic officia totam</strong> mollitia aliquam labore!
+          facilis? Id distinctio necessitatibus <strong class="post__text--bold">hic officia totam</strong> mollitia
+          aliquam labore!
           Facere aspernatur assumenda
           quae laboriosam placeat sunt. Corrupti repellendus corporis dolores sit, cumque voluptates deleniti sint nobis
           officia aperiam non culpa quod eveniet deserunt provident.</p>
 
-        <p class="post__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, eius? Obcaecati fuga eligendi dolor
+        <p class="post__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, eius? Obcaecati fuga
+          eligendi dolor
           labore
           vitae? Ea nisi iusto placeat perferendis asperiores? Perferendis, nemo. Possimus consectetur aperiam, officia
           aliquam consequuntur, corrupti fugit est vero perferendis nobis voluptas quia culpa placeat.</p>
-        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquid, enim aspernatur quae debitis sapiente
+        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquid, enim aspernatur quae
+          debitis sapiente
           voluptas voluptatibus ut odio ratione, aperiam quibusdam temporibus dignissimos fugiat animi reiciendis itaque
           vitae expedita deserunt, perferendis non quis possimus. Quaerat alias necessitatibus, pariatur ducimus tempora
           sunt consequatur! Eum soluta quidem a, vel earum adipisci nobis reiciendis fugiat explicabo sapiente dolor
@@ -74,14 +85,17 @@
 
         <h3 class="post__h3">Hydration</h3>
 
-        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, perferendis dignissimos! Omnis inventore
-          accusantium nemo cum a aliquid fugit velit. <strong class="post__text--bold">In laborum iste eveniet adipisci ipsum eos
+        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, perferendis dignissimos!
+          Omnis inventore
+          accusantium nemo cum a aliquid fugit velit. <strong class="post__text--bold">In laborum iste eveniet adipisci
+            ipsum eos
             quis, quo quae nobis,
             earum nulla corrupti?</strong> Enim illum magnam consectetur debitis nesciunt corrupti blanditiis
           necessitatibus!
           Maxime,
           inventore.</p>
-        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. <em class="post__text--italic">Nemo, nostrum</em>.
+        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. <em
+            class="post__text--italic">Nemo, nostrum</em>.
           Perspiciatis vero deleniti quo sunt impedit culpa eaque minima at sit illum? Corrupti nisi rerum fugit.
           Laboriosam sapiente doloremque ipsam voluptas libero amet dignissimos architecto, modi consequatur minus
           aspernatur enim quasi dolores totam sint quisquam velit, unde ad tenetur est consectetur. Laudantium nihil
@@ -89,39 +103,48 @@
 
         <h3 class="post__h3">Exercise</h3>
 
-        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut natus doloribus ex, laudantium dolores
+        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut natus doloribus ex,
+          laudantium dolores
           itaque inventore ratione officiis eos.</p>
-        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloremque quod veritatis nisi molestias,
+        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloremque quod
+          veritatis nisi molestias,
           repellat, consectetur sunt cum excepturi iusto laudantium sed totam quis? Impedit deserunt, facilis aut at
           autem tenetur accusamus eos praesentium sit!</p>
-        <p class="post__text">Lorem ipsum, dolor sit <a class="post__link" href="#">amet consectetur adipisicing elit</a>. Ad, quod pariatur!
+        <p class="post__text">Lorem ipsum, dolor sit <a class="post__link" href="#">amet consectetur adipisicing
+            elit</a>. Ad, quod pariatur!
           Consectetur, esse quam autem tenetur officia obcaecati expedita aliquam corrupti, commodi odit, qui excepturi
           voluptatibus similique blanditiis illo ratione ea saepe tempora voluptas recusandae laborum illum numquam.
           Aperiam, eaque?</p>
 
         <h3 class="post__h3">Rest</h3>
 
-        <p class="post__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo optio esse natus veniam unde, adipisci
+        <p class="post__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo optio esse natus veniam
+          unde, adipisci
           reiciendis praesentium fugiat accusamus, quisquam vitae nesciunt nihil amet architecto? Veniam aspernatur
           dolor aliquam voluptate!</p>
-        <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nihil eum dolores saepe sit velit ipsum
+        <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nihil eum dolores
+          saepe sit velit ipsum
           obcaecati labore deleniti voluptate consequatur explicabo impedit, quia vitae magnam dolore pariatur nostrum
           reiciendis vel corrupti necessitatibus modi illum molestias iusto. Assumenda iusto quod voluptas, fugiat id
           quae dicta?</p>
-        <p class="post__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi laboriosam, harum nulla hic nemo quas. Veniam,
+        <p class="post__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi laboriosam, harum nulla hic
+          nemo quas. Veniam,
           omnis, ipsam magnam quae quod, praesentium qui at repudiandae aspernatur eaque consectetur. Ipsum, molestias.
           Cumque ex quia veritatis non blanditiis hic perferendis quidem nesciunt.</p>
 
         <h3 class="post__h3">Mental Health</h3>
-        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vel quia sit corporis recusandae tempore itaque
+        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vel quia sit corporis
+          recusandae tempore itaque
           tempora magni, doloremque inventore expedita maiores voluptatem labore nulla rem sequi minima beatae velit
           cumque praesentium aspernatur quae laborum cupiditate ipsa. Ipsum quod repellat earum dignissimos fugiat
           reprehenderit, fugit deserunt. Numquam excepturi quasi reiciendis vitae, neque dicta commodi corrupti magnam,
           harum alias voluptas dolorem.</p>
         <hr>
-        <q class="post__text--quote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit vitae quod fugit facere error molestias.</q>
+        <q class="post__text--quote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit vitae quod fugit
+          facere error molestias.</q>
         <hr>
-        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro saepe autem alias reprehenderit magnam sed
+        <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro saepe autem alias
+          reprehenderit magnam sed
           odio aperiam, qui praesentium harum. Placeat, pariatur! Quia officiis veniam laboriosam! Aut voluptatem itaque
           dolorum qui deleniti molestiae corrupti vel dolore expedita ipsa quod illum sequi molestias maiores, suscipit
           commodi provident in sed eum eius explicabo cupiditate? Omnis, excepturi earum?</p>
@@ -134,9 +157,12 @@
             <p class="post__socials-menu-item-text">Share this page:</p>
 
           </li>
-          <li class="post__socials-menu-item"><a class="post__socials-menu-item-link" href="#"><i class="fa fa-facebook"></i></a></li>
-          <li class="post__socials-menu-item"><a class="post__socials-menu-item-link" href="#"><i class="fa fa-twitter"></i></a></li>
-          <li class="post__socials-menu-item"><a class="post__socials-menu-item-link" href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li class="post__socials-menu-item"><a class="post__socials-menu-item-link" href="#"><i
+                class="fa fa-facebook"></i></a></li>
+          <li class="post__socials-menu-item"><a class="post__socials-menu-item-link" href="#"><i
+                class="fa fa-twitter"></i></a></li>
+          <li class="post__socials-menu-item"><a class="post__socials-menu-item-link" href="#"><i
+                class="fa fa-linkedin"></i></a></li>
           <li class="post__socials-menu-item">|</li>
           <li class="post__socials-menu-item"><button class="btn">Print <i class="fa fa-print"></i></button></li>
 
@@ -164,7 +190,8 @@
 
         <h2 class="post-aside__h2">About Me</h2>
 
-        <p class="post-aside__text post-aside__text-center">My name is Bianca Fielder. I currently attend a Udacity Nanodegree Program for Front-End
+        <p class="post-aside__text post-aside__text-center">My name is Bianca Fielder. I currently attend a Udacity
+          Nanodegree Program for Front-End
           Web Development. I'm also a health enthusiast.</p>
 
       </section>
@@ -175,12 +202,18 @@
 
         <ul class="post-aside__archives-menu">
 
-          <li class="post-aside__archives-menu-item"><a class="post-aside__archives-menu-link" href="">April 2023</a></li>
-          <li class="post-aside__archives-menu-item"><a class="post-aside__archives-menu-link" href="">March 2023</a></li>
-          <li class="post-aside__archives-menu-item"><a class="post-aside__archives-menu-link" href="">February 2023</a></li>
-          <li class="post-aside__archives-menu-item"><a class="post-aside__archives-menu-link" href="">January 2023</a></li>
-          <li class="post-aside__archives-menu-item"><a class="post-aside__archives-menu-link" href="">December 2022</a></li>
-          <li class="post-aside__archives-menu-item"><a class="post-aside__archives-menu-link" href="">November 2022</a></li>
+          <li class="post-aside__archives-menu-item"><a class="post-aside__archives-menu-link" href="">April 2023</a>
+          </li>
+          <li class="post-aside__archives-menu-item"><a class="post-aside__archives-menu-link" href="">March 2023</a>
+          </li>
+          <li class="post-aside__archives-menu-item"><a class="post-aside__archives-menu-link" href="">February 2023</a>
+          </li>
+          <li class="post-aside__archives-menu-item"><a class="post-aside__archives-menu-link" href="">January 2023</a>
+          </li>
+          <li class="post-aside__archives-menu-item"><a class="post-aside__archives-menu-link" href="">December 2022</a>
+          </li>
+          <li class="post-aside__archives-menu-item"><a class="post-aside__archives-menu-link" href="">November 2022</a>
+          </li>
 
         </ul>
 
@@ -194,16 +227,19 @@
 
       <ul class="post-footer__socials-menu">
 
-        <li class="post-footer__socials-menu-item"><a class="post-footer__socials-menu-item-link" href="#"><i class="fa fa-facebook"></i></a></li>
-        <li class="post-footer__socials-menu-item"><a class="post-footer__socials-menu-item-link" href="#"><i class="fa fa-twitter"></i></a></li>
-        <li class="post-footer__socials-menu-item"><a class="post-footer__socials-menu-item-link" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li class="post-footer__socials-menu-item"><a class="post-footer__socials-menu-item-link" href="#"><i
+              class="fa fa-facebook"></i></a></li>
+        <li class="post-footer__socials-menu-item"><a class="post-footer__socials-menu-item-link" href="#"><i
+              class="fa fa-twitter"></i></a></li>
+        <li class="post-footer__socials-menu-item"><a class="post-footer__socials-menu-item-link" href="#"><i
+              class="fa fa-linkedin"></i></a></li>
 
       </ul>
 
     </footer>
 
   </div>
-
+  <script src="./js/blog.js"></script>
 </body>
 
 </html>

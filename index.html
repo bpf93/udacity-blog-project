@@ -11,11 +11,20 @@
 
 <body>
   <div class="home-layout">
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog-post.html">Blog</a></li>
+    <div class="container">
+      <nav class="nav">
+      <ul class="nav__menu">
+        <li class="nav__menu-li"><a class="nav__menu-link" href="index.html">Home</a></li>
+        <li class="nav__menu-li"><a class="nav__menu-link" href="blog-post.html">Blog</a></li>
       </ul>
+    </nav>
+    <button class="hamburger">
+      <div class="bar"></div>
+    </button>
+  </div>
+    <nav class="mobile-nav">
+      <a class="mobile-nav__link" href="index.html">Home</a>
+      <a class="mobile-nav__link" href="blog-post.html">Blog</a>
     </nav>
     <div class="hero">
       <h1 class="hero__h1">My Blog</h1>
@@ -88,7 +97,8 @@
         <div class="post-card">
           <header class="post-card-header">
             <figure class="post-card-header__figure">
-              <img class="post-card-header__figure-img" src="images/home/meditation.jpg" alt="woman in a meditative pose">
+              <img class="post-card-header__figure-img" src="images/home/meditation.jpg"
+                alt="woman in a meditative pose">
               <figcaption class="post-card-header__figure-caption">Woman in a meditative pose</figcaption>
             </figure>
             <div class="post-card-header__details">
@@ -111,7 +121,8 @@
             <figure class="post-card-header__figure">
               <img class="post-card-header__figure-img" src="images/home/salad.jpg"
                 alt="colorful salad with eggs and chopped vegetables">
-              <figcaption class="post-card-header__figure-caption">Colorful salad with eggs and chopped vegetables</figcaption>
+              <figcaption class="post-card-header__figure-caption">Colorful salad with eggs and chopped vegetables
+              </figcaption>
             </figure>
             <div class="post-card-header__details">
               <h2 class="post-card-header__heading">Post Title</h2>
@@ -162,6 +173,7 @@
       </ul>
     </footer>
   </div>
+  <script src="./js/blog.js"></script>
 </body>
 
 </html>

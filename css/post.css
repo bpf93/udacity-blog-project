@@ -180,19 +180,7 @@ color: #41bec5;
 
 /* Media Queries */
 /* Small Screens */
-.post-layout {
-  display: grid;
-  grid-template-rows: 5rem auto auto 5rem;
-  grid-template-areas:
-    "nav"
-    "pm"
-    "pa"
-    "pft";
-}
 
-.nav {
-  grid-area: nav;
-}
 
 .post-main {
   grid-area: pm;
