@@ -1,7 +1,7 @@
 /* Home Main */
 .home-layout {
   display: grid;
-  grid-template-rows: 5rem 60vh auto 5rem;
+  grid-template-rows: auto 60vh auto 5rem;
   grid-template-areas:
     "nav"
     "hero"

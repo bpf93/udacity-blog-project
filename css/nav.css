@@ -1,13 +1,12 @@
 /*Navigation*/
 .container {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   grid-area: nav;
+  justify-content: flex-end;
   /* box-shadow: 0 0 5px 5px #0000001c; */
   background: #979F51;
   z-index: 1;
-  padding-right: 3rem;
+  padding: 1rem 0;
 }
 
 .nav__menu {
@@ -48,6 +47,7 @@
   background: none;
   outline: none;
   border: none;
+  margin-right: 2rem;
 }
 
 .bar,
@@ -56,18 +56,18 @@
   display: block;
   content: '';
   width: 100%;
-  height: 5px;
+  height: 3px;
   background: white;
   margin: 6px 0;
   transition: 0.4s;
 }
 
 .hamburger.active:before {
-  transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(45deg) translate(6px, 4px);
 }
 
 .hamburger.active:after {
-  transform: rotate(45deg) translate(-9px, -6px);
+  transform: rotate(-45deg) translate(8px, -7px);
 }
 
 .hamburger.active .bar {
@@ -89,7 +89,7 @@
   margin-top: 5rem;
   padding-top: 2rem;
   background: #ffffffcf;
-  transition: 0.8s;
+  transition: 0.4s;
 }
 
 .mobile-nav.active {
