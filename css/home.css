@@ -1,6 +1,7 @@
 /* Home Main */
 .home-layout {
   display: grid;
+  justify-content: center;
   grid-template-rows: auto 60vh auto 5rem;
   grid-template-areas:
     "nav"
