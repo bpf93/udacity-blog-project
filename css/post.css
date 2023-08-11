@@ -11,7 +11,8 @@
 /* Header */
 
 .post-header__h1 {
-  font: 700 2.5rem/3rem "Wix Madefor Display", sans-serif;
+  white-space: nowrap;
+  font: 700 2rem/3rem "Wix Madefor Display", sans-serif;
   margin-bottom: 0;
   text-align: left;
 }
@@ -21,14 +22,23 @@
   font-size: 0.9rem;
 }
 
-.post-figure-img {
-  height: auto;
+.post-figure {
+  margin: 3rem 0;
   width: 100%;
-  margin: 2rem 0 0 0;
 }
 
 .post-figure__figcaption {
-margin-bottom: 2rem;
+  display: none;
+}
+
+.post-figure-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+
+.post-figure__figcaption {
+  margin-bottom: 2rem;
 }
 
 /* Post Body */
@@ -40,15 +50,17 @@ margin-bottom: 2rem;
 }
 
 .post__h2 {
-  background-color: #568e91b7; 
+  background-color: #568e91b7;
+  font-size: 1.25rem;
 }
 
 .post__h3 {
   background-color: #EFEFEF;
+  font-size: 1rem;
 }
 
 .post__text {
-  font-size: 1.1rem;
+  font-size: 0.875rem;
   text-align: justify;
 }
 
@@ -60,6 +72,7 @@ margin-bottom: 2rem;
 .post__text--underline {
   text-decoration: underline;
 }
+
 .post__text--bold {
   font-weight: bold;
 }
@@ -123,9 +136,9 @@ margin-bottom: 2rem;
   width: 60%;
   padding: 1rem;
   margin: 7rem 3rem;
-  background:#ffffff54;
+  background: #ffffff54;
   text-align: center;
-  box-shadow: 0 8px 40px #00000018;  
+  box-shadow: 0 8px 40px #00000018;
 }
 
 .post-aside__socials-list {
@@ -220,7 +233,7 @@ margin-bottom: 2rem;
 }
 
 .post-footer i {
-color: #41bec5;
+  color: #41bec5;
 }
 
 /* Media Queries */
