@@ -91,28 +91,58 @@
 .post__socials-menu {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  white-space: nowrap;
   align-items: baseline;
   gap: 1rem;
   padding: 0;
   list-style: none;
 }
 
-.post__socials-menu .fa {
+.post__socials-menu-item-text {
+  font: 1.2rem "Dancing Script", cursive;
+}
+
+.post__socials-menu-item-text span {
+  font-family: Quicksand, sans-serif;
+  padding-left: 0.3rem;
+}
+
+
+.post__socials-menu .fa-brands {
   color: #41bec5;
+
 }
 
-.post__socials-menu .fa-print {
+.btn__print {
+  border: none;
+  background: none;
+  font: 1.2rem "Dancing Script", cursive;
+}
+
+.btn__print .fa-print {
   color: #013436;
+  padding-left: 0.2rem;
 }
 
-.post .fa-arrow-circle-left,
-.post .fa-arrow-circle-right {
-  color: #cf7b1e;
+.post__socials-menu i {
+  border: none;
 }
 
 .btn {
   font-size: 1rem;
+}
+
+.btn__previous,
+.btn__next {
+  border: rgb(36, 32, 32);
+  padding: 0.8rem;
+  font-size: 0.925rem;
+}
+
+.post__btn-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Post Aside */
@@ -167,8 +197,6 @@
   font-variant: small-caps;
 }
 
-
-
 .profile {
   display: flex;
   justify-content: center;
@@ -215,21 +243,34 @@
 
 /* Socials */
 .post-footer__socials-menu {
-  background-color: #EFEFEF;
-  min-height: auto;
   display: flex;
   flex-direction: row;
-  list-style: none;
-  gap: 1.5rem;
+  column-gap: 1.5rem;
   justify-content: center;
+  list-style: none;
   padding: 0 0 2rem 0;
 }
 
 .post-footer__socials-menu-item {
-  background-color: #fff;
-  border-radius: 2rem;
+  border-radius: 50%;
+  width: 25px;
+  text-align: center;
   padding: 1rem;
-  line-height: 1rem;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.post-footer__socials-menu-item {
+  background: white;
+  border-radius: 50%;
+}
+
+.post-footer__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font: 1.5rem "Dancing Script", cursive;
+  margin-bottom: 0;
 }
 
 .post-footer i {
