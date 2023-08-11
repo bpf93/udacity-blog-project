@@ -7,7 +7,7 @@
     "nav"
     "hero"
     "hm"
-    "hft";
+    "ft";
 }
 
 .home-main {
@@ -120,21 +120,3 @@
 }
 
 /* Home Footer*/
-.home-footer {
-  grid-area: hft;
-  background-color: #EFEFEF;
-  color: #fff;
-  padding: 0.625rem;
-}
-
-.home-footer-socials {
-  display: flex;
-  list-style: none;
-  gap: 1.25rem;
-  justify-content: flex-end;
-  margin-right: 3.125rem;
-}
-
-.home-footer-socials i {
-  color: #317578;
-}

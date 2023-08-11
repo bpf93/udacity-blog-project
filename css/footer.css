@@ -1,0 +1,40 @@
+/* Footer */
+footer {
+  grid-area: ft;
+  background-color: #EFEFEF;
+  padding: 1rem 0;
+  height: fit-content;
+}
+
+/* Socials */
+.footer__socials-menu {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.5rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0 0 2rem 0;
+}
+
+.footer__socials-li {
+  border-radius: 50%;
+  width: 25px;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  background: white;
+  border-radius: 50%;
+}
+
+.footer__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font: 1.5rem "Dancing Script", cursive;
+  margin-bottom: 0;
+}
+
+footer i {
+  color: #41bec5;
+}

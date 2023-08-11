@@ -6,8 +6,7 @@
   "nav"
   "pm"
   "pa"
-  "pft";
-  justify-content: center;
+  "ft";
 }
 
 /* Main */
@@ -247,53 +246,8 @@
   color: #000;
 }
 
-/* Footer */
-.post-footer {
-  grid-area: pft;
-  background-color: #EFEFEF;
-  padding: 1rem 0;
-}
-
-/* Socials */
-.post-footer__socials-menu {
-  display: flex;
-  flex-direction: row;
-  column-gap: 1.5rem;
-  justify-content: center;
-  list-style: none;
-  padding: 0 0 2rem 0;
-}
-
-.post-footer__socials-menu-item {
-  border-radius: 50%;
-  width: 25px;
-  text-align: center;
-  padding: 1rem;
-  margin: 1rem 0;
-  font-size: 1.5rem;
-}
-
-.post-footer__socials-menu-item {
-  background: white;
-  border-radius: 50%;
-}
-
-.post-footer__text {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font: 1.5rem "Dancing Script", cursive;
-  margin-bottom: 0;
-}
-
-.post-footer i {
-  color: #41bec5;
-}
-
 /* Media Queries */
 /* Small Screens */
-
-
 
 
 .post-aside__archives {
