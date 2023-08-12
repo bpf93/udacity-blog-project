@@ -119,4 +119,18 @@
   font-size: 1rem;
 }
 
-/* Home Footer*/
+/* Media Queries */
+@media screen and (min-width: 769px){
+  .post-card {
+  max-width: 45%;
+  box-shadow: 0 8px 40px #00000018;
+}
+
+.post-card-container {
+  width: 80%;
+  display: flex;
+  row-gap: 5rem;
+  justify-content: space-around;
+  margin: 3rem auto;
+}
+}

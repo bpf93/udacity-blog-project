@@ -13,9 +13,9 @@
   display: flex;
   list-style: none;
   font-size: 1.25rem;
-  gap: 1.5rem;
+  gap: 3rem;
   justify-content: flex-end;
-  padding-right: 1rem;
+  padding-right: 3rem;
 }
 
 .nav__menu-link {

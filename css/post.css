@@ -1,8 +1,9 @@
 /* Layout */
 .post-layout {
   display: grid;
+  justify-content: center;
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: 
+  grid-template-areas:
   "nav"
   "pm"
   "pa"
@@ -18,7 +19,6 @@
   background-color: #ff00;
 }
 
-/* Post */
 /* Header */
 
 .post-header__h1 {
@@ -50,6 +50,12 @@
 
 .post-figure__figcaption {
   margin-bottom: 2rem;
+}
+
+/* Post */
+.post {
+  max-width: 75%;
+  margin: auto;
 }
 
 /* Post Body */
@@ -102,7 +108,7 @@
 .post__socials-menu {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   white-space: nowrap;
   align-items: baseline;
   gap: 1rem;
@@ -174,7 +180,8 @@
 
 /* About Section */
 .post-aside__about {
-  width: 60%;
+  min-width: 30%;
+  max-width: 45%;
   padding: 1rem;
   margin: 7rem 3rem;
   background: #ffffff54;
@@ -237,22 +244,19 @@
 
 /* Archives Section */
 .post-aside__archives {
-  margin: 7rem;
+  margin: 7rem 0;
   padding: 2rem;
   background-color: #ffffff54;
+  white-space: nowrap;
 }
 
 .post-aside__archives-menu-link {
   color: #000;
 }
 
-/* Media Queries */
-/* Small Screens */
-
-
 .post-aside__archives {
   text-align: center;
-  width: 60%;
+  width: fit-content;
 }
 
 .post-aside__archives-menu {
@@ -260,6 +264,21 @@
   text-align: left;
 }
 
-.post {
-  max-width: 37.5rem;
+/* Media Queries */
+/* Medium Screens */
+@media screen and (min-width: 769px) {
+  .post-layout {
+    display: grid;
+    justify-content: stretch;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "nav"
+    "pm"
+    "pa"
+    "ft";
+  }
+
+  .mobile-nav {
+    display: none;
+  }
 }
